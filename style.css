@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.cuerpo{
+    width: 1280px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.login{
+    width: 474px;
+    height: 544px;
+    border: 2px solid black;
+
+}
+.loginC{
+    width: 474px;
+    height: 544px;
+}
+.icono{
+display: flex;
+justify-content: start;
+align-items: center;
+text-align: center;
+}
+@media (min-width:375px){
+}
