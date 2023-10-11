@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+/*login*/
 .cuerpo{
     width: 1280px;
     margin: 50px;
@@ -16,17 +17,23 @@
     width: 474px;
     height: 544px;
     border: 2px solid black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 .loginC{
-    width: 474px;
-    height: 544px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    gap: 20px;
 }
-.icono{
-display: flex;
-justify-content: start;
-align-items: center;
-text-align: center;
+.inputs{
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width:375px){
 }
