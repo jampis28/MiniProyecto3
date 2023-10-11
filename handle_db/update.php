@@ -9,4 +9,4 @@ photo ='$photo',
 name ='$name',
 bio ='$bio',
 phone ='$phone'");
-header("Location: /index.php");
+header("Location: /views/edit.php");

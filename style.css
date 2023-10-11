@@ -1,39 +1,176 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/*login*/
-.cuerpo{
-    width: 1280px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
+/*--------------login-------------*/
+.cuerpo {
+  width: 1280px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-.login{
-    width: 474px;
-    height: 544px;
-    border: 2px solid black;
-    border-radius: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+.login {
+  width: 474px;
+  height: 544px;
+  border: 2px solid black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loginC{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 70%;
-    gap: 20px;
+.loginC {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  gap: 20px;
 }
-.inputs{
-    display: flex;
-    flex-direction: column;
+.inputs {
+  display: flex;
+  flex-direction: column;
 }
-@media (min-width:375px){
+/*--------------Persona_Info-----------------*/
+.navbar {
+  margin-top: 10px;
+  width: 1280px;
+}
+.btn {
+  background-color: aqua;
+}
+.nameuser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_personal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.personal {
+  display: flex;
+  width: 1280px;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  width: 845.91px;
+  height: 580.54px;
+  border: solid 1px;
+  border-color: rgba(224, 224, 224, 1);
+}
+.editar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+  border-color: rgba(224, 224, 224, 1);
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+.btnprofile {
+  width: 100px;
+}
+.a {
+  width: 100px;
+}
+.Photo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+  border-bottom: solid 1px;
+  border-color: rgba(224, 224, 224, 1);
+  padding: 15px 0 15px 35px;
+  gap: 200px;
+}
+.photo {
+  width: 155px;
+  text-align: start;
+  justify-content: start;
+  align-items: start;
+}
+.imgphoto {
+  border: solid 2px;
+  border-radius: 8px;
+}
+.fila {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: left;
+  border-bottom: solid 1px;
+  border-color: rgba(224, 224, 224, 1);
+  padding: 15px 0 15px 35px;
+  gap: 200px;
+}
+.description {
+  width: 155px;
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  align-items: start;
+}
+/*----------------Edit------------------*/
+.infoedit{
+  width: 845.91px;
+  height: 827.56px;
+  border: solid 1px;
+  border-color: rgba(224, 224, 224, 1);
+}
+.editarlo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+}
+.back {
+  width: 845.91px;
+}
+.personaledit {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  justify-content: center;
+  align-items: center;
+}
+.Photoedit {
+  display: flex;
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  gap: 25px;
+}
+.filaedit {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.resultadoedit{
+  width: 300px;
+}
+.inputedit{
+  width: 416.93px;
+  height: 52px;
+}
+@media (min-width: 375px) {
 }
