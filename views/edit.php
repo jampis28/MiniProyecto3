@@ -3,7 +3,10 @@ session_start();
 if (!isset($_SESSION["user"])) {
     header("Location: /index.php");
     die();
-}
+};
+$id = $_SESSION["user"]["id"];
+require_once($_SERVER["DOCUMENT_ROOT"] . "/config/database.php");
+$res = $mysqli->query("SELECT * FROM logins WHERE id = $id");
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +26,15 @@ if (!isset($_SESSION["user"])) {
         <div class="container-xxl">
             <img src="/assets/devchallenges.svg" alt="logo" width="200" height="24">
             <div class="btn-group">
-                <span class="nameuser"><?= $_SESSION["user"]["name"] ?></span>
+                <div>
+                    <?php
+                    while ($row = $res->fetch_assoc()) {
+                        $img = base64_encode($row["photo"]);
+                        echo "<img id='perfilnav' src='data:image/jpg;base64,$img' alt='Picture';/>";
+                    }
+                    ?>
+                </div>
+                <span class="nameuser"><?= $_SESSION["user"]["names"] ?></span>
                 <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
@@ -49,9 +60,14 @@ if (!isset($_SESSION["user"])) {
                     <span>Changes will be reflected to every services</span>
                 </div>
             </div>
-            <form method="post" action="/handle_db/update.php">
+            <form method="post" action="/handle_db/update.php" enctype="multipart/form-data">
                 <div class="Photoedit">
                     <div class="photoedit">
+                        <?php
+                        echo "<img id='imgperfil' src='data:image/jpg;base64,$img' alt='Picture';/>";
+                        ?>
+                    </div>
+                    <div>
                         <input class="inputedit" type="file" name="imagen">
                     </div>
                     <div class="imgphotoedit">
@@ -63,7 +79,7 @@ if (!isset($_SESSION["user"])) {
                         <label>NAME</label>
                     </div>
                     <div class="resultadoedit">
-                        <input class="inputedit"  value="<?= $_SESSION["user"]["name"] ?>" name="name" required>
+                        <input class="inputedit" value="<?= $_SESSION["user"]["names"] ?>" name="name" required>
                     </div>
                 </div>
                 <div class="filaedit">
@@ -87,7 +103,7 @@ if (!isset($_SESSION["user"])) {
                         <label>EMAIL</label>
                     </div>
                     <div class="resultadoedit">
-                        <input class="inputedit" value="<?= $_SESSION["user"]["email"] ?>" name="email" disabled>
+                        <input class="inputedit" value="<?= $_SESSION["user"]["email"] ?>" name="email">
                     </div>
                 </div>
                 <div class="filaedit">
@@ -95,7 +111,7 @@ if (!isset($_SESSION["user"])) {
                         <label>PASSWORD</label>
                     </div>
                     <div class="resultadoedit">
-                        <input type="password"  class="inputedit" placeholder="*********" name="contrasena" >
+                        <input type="password" class="inputedit" placeholder="*********" name="contrasena">
                     </div>
                 </div>
                 <div class="filaedit">

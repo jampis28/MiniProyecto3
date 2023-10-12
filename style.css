@@ -127,13 +127,13 @@
   align-items: start;
 }
 /*----------------Edit------------------*/
-.infoedit{
+.infoedit {
   width: 845.91px;
   height: 827.56px;
   border: solid 1px;
   border-color: rgba(224, 224, 224, 1);
 }
-.editarlo{
+.editarlo {
   display: flex;
   align-items: center;
   text-align: center;
@@ -155,20 +155,44 @@
 }
 .Photoedit {
   display: flex;
+  height: 100px;
   margin-left: 35px;
   margin-top: 10px;
   margin-bottom: 35px;
   gap: 25px;
+}
+.photoedit {
+  display: flex;
+  border: solid 2px;
+  width: 100px;
+  height: 100px;
+  }
+#imgperfil {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+#imgperfil1 {
+  width: 72px;
+  height: 72px;
+}
+#perfilnav {
+  margin-top: 5px;
+  width: 32px;
+  height: 32px; 
+  margin-right: 10px;
+  border-radius:8px ;
 }
 .filaedit {
   margin-left: 35px;
   margin-top: 20px;
   margin-bottom: 35px;
 }
-.resultadoedit{
+.resultadoedit {
   width: 300px;
 }
-.inputedit{
+.inputedit {
   width: 416.93px;
   height: 52px;
 }

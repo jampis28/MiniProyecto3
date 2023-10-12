@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
         if (isset($email, $contrasena) && $email !== "" && $contrasena !== "") {
             $hash = password_hash($contrasena, PASSWORD_DEFAULT);
-            $response = $mysqli->query("INSERT INTO logins(email, contrasena, photo, name, bio, phone) VALUES ('$email', '$hash', '$imagen','Ingrese su nombre','Ingrese su bio','00 000 0000');");
+            $response = $mysqli->query("INSERT INTO logins(email, contrasena, photo, names, bio, phone) VALUES ('$email', '$hash', '$imagen','Ingrese su nombre','Ingrese su bio','00 000 0000');");
         }
         if ($response) {
             $res = $mysqli->query("SELECT * FROM logins WHERE email = '$email';");

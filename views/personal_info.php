@@ -3,7 +3,11 @@ session_start();
 if (!isset($_SESSION["user"])) {
     header("Location: /index.php");
     die();
-}
+};
+$id = $_SESSION["user"]["id"];
+require_once($_SERVER["DOCUMENT_ROOT"] . "/config/database.php");
+$res = $mysqli->query("SELECT * FROM logins WHERE id = $id");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +26,15 @@ if (!isset($_SESSION["user"])) {
         <div class="container-xxl">
             <img src="/assets/devchallenges.svg" alt="logo" width="200" height="24">
             <div class="btn-group">
-                <span class="nameuser"><?= $_SESSION["user"]["name"] ?></span>
+                <div>
+                    <?php
+                    while ($row = $res->fetch_assoc()) {
+                        $img = base64_encode($row["photo"]);
+                        echo "<img id='perfilnav' src='data:image/jpg;base64,$img' alt='Picture';/>";
+                    }
+                    ?>
+                </div>
+                <span class="nameuser"><?= $_SESSION["user"]["names"] ?></span>
                 <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
@@ -59,7 +71,9 @@ if (!isset($_SESSION["user"])) {
                     <label>PHOTO</label>
                 </div>
                 <div class="imgphoto">
-                    <img src="<?= $_SESSION["user"]["photo"] ?>" alt="photo" width="72" height="72">
+                    <?php
+                    echo "<img id='imgperfil1' src='data:image/jpg;base64,$img' alt='Picture';/>";
+                    ?>
                 </div>
             </div>
             <div class="fila">
@@ -67,7 +81,7 @@ if (!isset($_SESSION["user"])) {
                     <label>NAME</label>
                 </div>
                 <div class="resultado">
-                    <p><?= $_SESSION["user"]["name"] ?></p>
+                    <p><?= $_SESSION["user"]["names"] ?></p>
                 </div>
             </div>
             <div class="fila">
