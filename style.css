@@ -11,11 +11,54 @@
   justify-content: center;
   align-content: center;
 }
+#titulologin {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+}
+.form-control {
+  padding-left: 25px;
+}
+.form-floating > label {
+  padding-top: 5px;
+}
+#email {
+  width: 356.48px;
+  height: 44px;
+  margin-bottom: 13px;
+}
+#contraseña {
+  width: 356.48px;
+  height: 44px;
+  margin-bottom: 20px;
+}
+#floatingInput {
+  width: 356.48px;
+  height: 44px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  border-radius: 8px;
+}
+#iconoemail {
+  width: 24px;
+  height: 24px;
+}
+#iconocontra {
+  width: 24px;
+  height: 24px;
+}
+.form-floating {
+  justify-content: end;
+  border-radius: 8px;
+  border-color: rgba(189, 189, 189, 1);
+}
 .login {
   width: 474px;
   height: 544px;
-  border: 2px solid black;
-  border-radius: 5%;
+  border: 1px solid rgba(189, 189, 189, 1);
+  border-radius: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,18 +66,115 @@
 .loginC {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   gap: 20px;
+  padding: 12px;
+}
+.btn_login {
+  width: 356.48px;
+  height: 38px;
+}
+#labelcontr {
+  padding: 5px;
+}
+#letrasemail {
+  margin-left: 10px;
+  color: rgba(130, 130, 130, 1);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn_login1 {
+  width: 356.48px;
+  height: 38px;
+  background: rgba(47, 128, 237, 1);
+  border-radius: 8px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
 }
 .inputs {
   display: flex;
   flex-direction: column;
 }
+#social {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(130, 130, 130, 1);
+}
+#imgsocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+#imgsocial > img {
+  width: 42px;
+  height: 42px;
+}
+#changepage {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(130, 130, 130, 1);
+}
+/*---------------Register---------------------*/
+.register {
+  width: 473.83px;
+  height: 634.3px;
+  border: 1px solid rgba(189, 189, 189, 1);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerC {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 90%;
+  height: 90%;
+  gap: 20px;
+  padding: 10px 42px 42px 38px;
+}
+.titulo_login {
+  width: 300px;
+  height: 60px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+}
+.subtitulo_login {
+  width: 360px;
+  height: 60px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 1);
+}
 /*--------------Persona_Info-----------------*/
 .navbar {
   margin-top: 10px;
   width: 1280px;
+}
+#menu{
+  left: 100px;
 }
 .btn {
   background-color: aqua;
@@ -44,6 +184,14 @@
   justify-content: center;
   align-items: center;
 }
+#titulonave{
+  color: red;
+}
+#iconosnav{
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
 .titulo_personal {
   margin-top: 10px;
   display: flex;
@@ -51,6 +199,42 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+#titulo_personal1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 1);
+}
+#sub_personal1 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 25px;
+}
+#profiletitulo {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+#profilesub {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(130, 130, 130, 1);
+}
+#btnprofile1 {
+  width: 95.34px;
+  height: 38px;
+  border: 1px solid rgba(130, 130, 130, 1);
+  border-radius: 12px;
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(130, 130, 130, 1);
 }
 .personal {
   display: flex;
@@ -104,9 +288,12 @@
   text-align: start;
   justify-content: start;
   align-items: start;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(189, 189, 189, 1);
 }
 .imgphoto {
-  border: solid 2px;
   border-radius: 8px;
 }
 .fila {
@@ -125,13 +312,40 @@
   text-align: start;
   justify-content: start;
   align-items: start;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(189, 189, 189, 1);
+}
+.resultado {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
 }
 /*----------------Edit------------------*/
+.back{
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+  align-items: center;
+  margin-bottom: 15px;
+}
+.svg {
+  fill: #2d8bc2
+}
+#iconoback{
+  width: 18px;
+  height: 18px;
+}
 .infoedit {
   width: 845.91px;
   height: 827.56px;
   border: solid 1px;
   border-color: rgba(224, 224, 224, 1);
+  border-radius: 12px;
 }
 .editarlo {
   display: flex;
@@ -146,12 +360,39 @@
 .back {
   width: 845.91px;
 }
+.editatitulo{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+.editasub{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(130, 130, 130, 1);
+}
 .personaledit {
   display: flex;
   flex-direction: column;
   width: 1280px;
   justify-content: center;
   align-items: center;
+}
+#iconocamera {
+  display: flex;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.image-upload > input {
+  display: none;
+}
+.image-upload img {
+  width: 30px;
+  cursor: pointer;
 }
 .Photoedit {
   display: flex;
@@ -163,10 +404,11 @@
 }
 .photoedit {
   display: flex;
-  border: solid 2px;
   width: 100px;
   height: 100px;
-  }
+  justify-content: center;
+  align-items: center;
+}
 #imgperfil {
   position: absolute;
   width: 100px;
@@ -176,25 +418,77 @@
 #imgperfil1 {
   width: 72px;
   height: 72px;
+  transition: transform 0.2s ease;
 }
+#imgperfil1:hover{
+  transform: scale(1.1);
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px blueviolet;
+  -webkit-box-shadow: 0px 0px 15px 15px blueviolet;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
 #perfilnav {
   margin-top: 5px;
   width: 32px;
-  height: 32px; 
+  height: 32px;
   margin-right: 10px;
-  border-radius:8px ;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+#perfilnav:hover{
+  transform: scale(1.1);
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px blueviolet;
+  -webkit-box-shadow: 0px 0px 15px 15px blueviolet;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
+.imgphotoedit{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(130, 130, 130, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .filaedit {
   margin-left: 35px;
   margin-top: 20px;
   margin-bottom: 35px;
 }
+.btnedit {
+  width: 82px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(47, 128, 237, 1);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(2555, 2555, 255, 1);
+}
+.descriptionedit {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgba(79, 79, 79, 1);
+}
 .resultadoedit {
-  width: 300px;
+  width: 416.93px;
+  height: 52px;
 }
 .inputedit {
   width: 416.93px;
   height: 52px;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: rgba(130, 130, 130, 1);
 }
+
 @media (min-width: 375px) {
 }
