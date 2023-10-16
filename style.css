@@ -169,9 +169,13 @@
   color: rgba(51, 51, 51, 1);
 }
 /*--------------Persona_Info-----------------*/
+.bg-light {
+  background-color: white;
+}
 .navbar {
   margin-top: 10px;
   width: 1280px;
+  background-color: white;
 }
 #menu{
   left: 100px;
