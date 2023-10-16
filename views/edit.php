@@ -25,7 +25,7 @@ $res = $mysqli->query("SELECT * FROM logins WHERE id = $id");
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
         <div class="container-xxl">
             <a href="/views/personal_info.php">
                 <img src="/assets/devchallenges.svg" alt="logo" width="200" height="24">
