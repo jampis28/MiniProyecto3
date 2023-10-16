@@ -99,7 +99,7 @@ $res = $mysqli->query("SELECT * FROM logins WHERE id = $id");
 
                             <?php
                             if ($row["photo"] === "") {
-                                echo "<img id='imgperfil' src='/assets/photo.png' alt='Picture';/>";
+                                echo "<img id='imgperfil' src='/assets/photo.png' alt='Picture' ;/>";
                             } else {
                                 echo "<img id='imgperfil' src='data:image/jpg;base64,$img' alt='Picture';/>";
                             }
@@ -116,7 +116,7 @@ $res = $mysqli->query("SELECT * FROM logins WHERE id = $id");
                                 </svg>
                             </div>
                             </label>
-                            <input id="file-input" type="file" name="imagen">
+                            <input id="file-input" type="file" name="imagen" >
                         </div>
                     </div>
                     <div class="imgphotoedit">
